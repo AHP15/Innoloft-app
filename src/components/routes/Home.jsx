@@ -1,11 +1,6 @@
-import { useDispatch } from "react-redux";
-
-import { test } from '../../slices/testSlice';
-
 const Home = () => {
-  const dispatch = useDispatch();
   return (
-    <div onClick={() => dispatch(test())}>Hello</div>
+    <div className="text-3xl font-bold underline">Hello</div>
   );
 };
 export default Home;

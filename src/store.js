@@ -1,8 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import testSlice from './slices/testSlice';
+import configSlice from './slices/ConfigSlice';
+import productSlice from './slices/ProductSlice';
+import TRLSlice from './slices/TRLSlice';
 
 export const store = configureStore({
   reducer: {
-    test: testSlice,
+    config: configSlice,
+    product: productSlice,
+    trl: TRLSlice,
   },
 });
